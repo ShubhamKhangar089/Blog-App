@@ -1,4 +1,3 @@
-import React from "react";
 import { useAuth } from "../context/AuthProvider";
 import { Link } from "react-router-dom";
 import Carousel from "react-multi-carousel";
@@ -8,7 +7,6 @@ function Trending() {
 
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },

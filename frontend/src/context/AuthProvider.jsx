@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
     const fetchProfile = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:8080/api/users/my-profile",
+          "https://blog-app-aiow.onrender.com/api/users/my-profile",
           {
             withCredentials: true,
             headers: { "Content-Type": "application/json" },
@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }) => {
     const fetchBlogs = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:8080/api/blogs/all-blogs",
+          "https://blog-app-aiow.onrender.com/api/blogs/all-blogs",
           { withCredentials: true }
         );
         console.log(data);

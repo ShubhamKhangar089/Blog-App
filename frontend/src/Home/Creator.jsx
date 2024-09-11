@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 function Creator() {
   const [admin, setAdmin] = useState([]);
@@ -7,7 +7,7 @@ function Creator() {
   useEffect(() => {
     const fetchAdmins = async () => {
       const { data } = await axios.get(
-        "http://localhost:8080/api/users/admins",
+        "https://blog-app-aiow.onrender.com/api/users/admins",
         {
           withCredentials: true,
         }
