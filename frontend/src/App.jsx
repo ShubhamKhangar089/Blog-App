@@ -54,7 +54,7 @@ function App() {
           exact
           path="/"
           element={
-            storedIsAuthenticated === true ? <Home /> : <Navigate to={"/login"} />
+            isAuthenticated === true ? <Home /> : <Navigate to={"/login"} />
           }
         />
         <Route exact path="/blogs" element={<Blogs />} />
